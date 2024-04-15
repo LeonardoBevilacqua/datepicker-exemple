@@ -1,0 +1,17 @@
+.dropdown-content {
+  display: none;
+}
+
+.dropdown:focus,
+.dropdown:focus-within {
+  background-color: yellow;
+}
+.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  background-color: yellow;
+  display: block;
+}
+
+.z-1 {
+  z-index: 1;
+}

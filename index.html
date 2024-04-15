@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date picker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="dropdown">
+      <input type="text" name="date" id="date" tabindex="0" role="button">
+      <div tabindex="0" class="dropdown-content z-1">
+        <fieldset>
+          <legend id="yearAndMonth"></legend>
+          <select name="month" id="month"></select>
+          <input type="number" name="year" id="year" placeholder="Year" />
+
+          <table border="1">
+            <thead>
+              <tr id="daysOfWeek"></tr>
+            </thead>
+            <tbody id="calendar"></tbody>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>
