@@ -1,14 +1,36 @@
-.dropdown-content {
-  display: none;
+body {
+  font-family: sans-serif;
 }
 
-.dropdown:focus,
-.dropdown:focus-within {
-  background-color: yellow;
+.dropdown-content {
+  display: none;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  background-color: #cdcdcd;
+  margin: 0.5rem 0;
 }
+
+table {
+  text-align: center;
+  margin: 0.5rem 0;
+
+  tr > td,
+  tr > th {
+    padding: 0.25rem;
+  }
+
+  tr > td:hover {
+    background-color: #dcdcdc;
+    cursor: pointer;
+  }
+}
+
 .dropdown:focus .dropdown-content,
 .dropdown:focus-within .dropdown-content {
-  background-color: yellow;
+  display: block;
+}
+
+.dropdown-content.open {
   display: block;
 }
 
