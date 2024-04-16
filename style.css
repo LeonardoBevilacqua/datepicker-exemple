@@ -1,26 +1,55 @@
+/*  #region Variables  */
+:root {
+  --spacing-xs: 0.25rem;
+  --spacing-s: 0.5rem;
+  --spacing-m: 1rem;
+  --spacing-l: 1.5rem;
+  --spacing-xl: 2rem;
+  --primary: #3c1e4a;
+  --secondary: #5a7a2a;
+  --accent: #886d19;
+  --neutral: #757575;
+  --base100: #121212;
+  --info: #4a3a6a;
+  --success: #558d33;
+  --warning: #805a2a;
+  --error: #803030;
+  --white: #fff;
+}
+/* #endregion */
+
+/* #region Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
+  background-color: var(--base100);
+  color: var(--white);
 }
+/* #endregion */
 
 .dropdown-content {
   display: none;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
-  background-color: #cdcdcd;
-  margin: 0.5rem 0;
+  background-color: var(--neutral);
+  margin: var(--spacing-s) 0;
 }
 
 table {
   text-align: center;
-  margin: 0.5rem 0;
+  margin: var(--spacing-s) 0;
 
   tr > td,
   tr > th {
-    padding: 0.25rem;
+    padding: var(--spacing-xs);
   }
 
   tr > td:hover {
-    background-color: #dcdcdc;
+    background-color: var(--primary);
     cursor: pointer;
   }
 }
