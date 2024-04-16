@@ -76,11 +76,11 @@ export function getWeeksOfMonth(year, month) {
     }
   }
 
-/**
- * Adjusts the last week of a month if needed.
- *
- * @return {void} This function does not return anything.
- */
+  /**
+   * Adjusts the last week of a month if needed.
+   *
+   * @return {void} This function does not return anything.
+   */
   function adjustLastWeek() {
     const lastDay = days[days.length - 1].getDay();
     const lastWeek = weeks[weeks.length - 1];
@@ -131,15 +131,16 @@ export function getMonthsWithLocale() {
  * @return {Array<string>} An array of localized day names.
  */
 export function getDaysOfWeekWithLocale() {
+  debugger;
   const days = [];
   const date = new Date();
 
   for (let i = 0; i < 7; i++) {
-    date.setDate(date.getDate() + (i + 1));
     days.push({
       index: date.getDay(),
       name: date.toLocaleString("default", { weekday: "long" }),
     });
+    date.setDate(date.getDate() + 1);
   }
 
   days.sort((a, b) => a.index - b.index);
