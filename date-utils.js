@@ -138,7 +138,7 @@ export function getDaysOfWeekWithLocale() {
   for (let i = 0; i < 7; i++) {
     days.push({
       index: date.getDay(),
-      name: date.toLocaleString("default", { weekday: "long" }),
+      name: date.toLocaleString("default", { weekday: "short" }),
     });
     date.setDate(date.getDate() + 1);
   }
